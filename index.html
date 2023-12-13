@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check | Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="style.js"></script>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <h1>Check the weather</h1>
+                <div class="form">
+                    <div class="form__input">
+                        <select id="search-option">
+                            <option value="country">Country</option>
+                            <option value="state" selected="selected">State</option>
+                            <option value="city">City</option>
+                            <option value="postcode">Postcode</option>
+                        </select>
+                        <input type="text" id="user-input" placeholder="Enter your city, state, ...">
+                    </div>
+                        <button type="submit" class="form__btn" id="submit-btn">Check</button>
+                </div>
+                <div class="result" id="display-result">
+                    <div class="temp">
+                        <h2>Temperature</h2>
+                        <h3 id="temp-value"></h3>
+                    </div>
+                    <div class="min-temp">
+                        <h3>Minimum temperature</h3>
+                        <h4 id="min-temp-value"></h4>
+                    </div>
+                    <div class="max-temp">
+                        <h3>Maximum temperature</h3>
+                        <h4 id="max-temp-value"></h4>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
