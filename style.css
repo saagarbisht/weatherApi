@@ -56,19 +56,6 @@ main{
     justify-content: space-between;
 }
 
-.form__input select{
-    width: 27%;
-    height: 40px;
-
-    border: none;
-    outline: none;
-    border-radius: 5px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    background-color: rgba(245, 245, 245, 0.639);
-
-    font-size: 1rem;
-
-}
 
 .form__input input{
     width: 68%;
@@ -87,15 +74,14 @@ main{
     transition: all 0.1s;
 }
 
-.form__input input:focus,
-.form__input select:focus{
+.form__input input:focus{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border: 2px solid rgba(0, 0, 0);
 }
 
-.form__btn{
+.btn{
     display: inline-block;
-    width: 200px;
+    width: 27%;
     height: 40px;
 
     border: none;
@@ -109,24 +95,26 @@ main{
     transition: transform 0.15s;
 }
 
-.form__btn:active{
-    transform: scale(0.95);
-}
 
 .result{
-    width: 300px;
+    width: max-content;
     height: max-content;
     border: 1px solid #212121;
     border-radius: 5px;
 
-    padding: 1rem 0;
+    padding: 1rem;
     margin-top: 1.25rem;
 
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    text-align: left;
 
     display: none;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 1.5rem;
+}
+
+.result span{
+    color: red;
+    text-transform: capitalize;
 }

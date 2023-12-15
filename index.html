@@ -12,30 +12,24 @@
         <section>
             <div class="container">
                 <h1>Check the weather</h1>
-                <div class="form">
-                    <div class="form__input">
-                        <select id="search-option">
-                            <option value="country">Country</option>
-                            <option value="state" selected="selected">State</option>
-                            <option value="city">City</option>
-                            <option value="postcode">Postcode</option>
-                        </select>
-                        <input type="text" id="user-input" placeholder="Enter your city, state, ...">
-                    </div>
-                        <button type="submit" class="form__btn" id="submit-btn">Check</button>
+                <div class="form" >
+                    <form class="form__input" id="form">
+                        <input type="text" id="user-input" placeholder="Enter your city, state, ..." autocomplete="off">
+                        <button type="submit" class="btn" id="submit-btn">Check</button>
+                    </form>
                 </div>
                 <div class="result" id="display-result">
+                    <div class="weather">
+                        <h3>Weather : <span id="weather"></span></h3>
+                    </div>
                     <div class="temp">
-                        <h2>Temperature</h2>
-                        <h3 id="temp-value"></h3>
+                        <h3>Temperature : <span id="temp"></span></h3>
                     </div>
                     <div class="min-temp">
-                        <h3>Minimum temperature</h3>
-                        <h4 id="min-temp-value"></h4>
+                        <h3>Sunrise : <span id="sunrise"> </span></h3>
                     </div>
                     <div class="max-temp">
-                        <h3>Maximum temperature</h3>
-                        <h4 id="max-temp-value"></h4>
+                        <h3>Sunset : <span id="sunset"></span></h3>
                 </div>
             </div>
         </section>
